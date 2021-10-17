@@ -1,0 +1,1577 @@
+{
+  "version": "14.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "my-lambda": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "my-lambda.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/my-lambda": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.2e0938d8207f9095a5914a1cf190836553d3f5604789b4f7e0e8f6f4760756bb",
+              "id": "2e0938d8207f9095a5914a1cf190836553d3f5604789b4f7e0e8f6f4760756bb",
+              "packaging": "zip",
+              "sourceHash": "2e0938d8207f9095a5914a1cf190836553d3f5604789b4f7e0e8f6f4760756bb",
+              "s3BucketParameter": "AssetParameters2e0938d8207f9095a5914a1cf190836553d3f5604789b4f7e0e8f6f4760756bbS3BucketA9CD06AD",
+              "s3KeyParameter": "AssetParameters2e0938d8207f9095a5914a1cf190836553d3f5604789b4f7e0e8f6f4760756bbS3VersionKeyE81EFF78",
+              "artifactHashParameter": "AssetParameters2e0938d8207f9095a5914a1cf190836553d3f5604789b4f7e0e8f6f4760756bbArtifactHash71FA47AA"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/construct-compat.ts:252:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:161:23)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "ExamenStack.addFileAsset (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+              "new LayerVersion (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-lambda/lib/layers.ts:124:29)",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:30:29)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.403b32b3ae34857678bba7fde5e4bc94c2c606b6ef2c7f5fe4750205011b48be",
+              "id": "403b32b3ae34857678bba7fde5e4bc94c2c606b6ef2c7f5fe4750205011b48be",
+              "packaging": "zip",
+              "sourceHash": "403b32b3ae34857678bba7fde5e4bc94c2c606b6ef2c7f5fe4750205011b48be",
+              "s3BucketParameter": "AssetParameters403b32b3ae34857678bba7fde5e4bc94c2c606b6ef2c7f5fe4750205011b48beS3Bucket2C99856C",
+              "s3KeyParameter": "AssetParameters403b32b3ae34857678bba7fde5e4bc94c2c606b6ef2c7f5fe4750205011b48beS3VersionKey555C4A6A",
+              "artifactHashParameter": "AssetParameters403b32b3ae34857678bba7fde5e4bc94c2c606b6ef2c7f5fe4750205011b48beArtifactHashCD3085AD"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/construct-compat.ts:252:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:161:23)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "ExamenStack.addFileAsset (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+              "new Function (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-lambda/lib/function.ts:338:29)",
+              "/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:172:15",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:53:21)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/customer-table/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "customertableAAE4519D",
+            "trace": [
+              "new Table (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:678:18)",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:13:17)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/dependencies-layer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "dependencieslayerCD66A07B",
+            "trace": [
+              "new LayerVersion (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-lambda/lib/layers.ts:132:39)",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:30:29)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/AssetParameters/2e0938d8207f9095a5914a1cf190836553d3f5604789b4f7e0e8f6f4760756bb/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters2e0938d8207f9095a5914a1cf190836553d3f5604789b4f7e0e8f6f4760756bbS3BucketA9CD06AD",
+            "trace": [
+              "new FileAssetParameters (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "ExamenStack.addFileAsset (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+              "new LayerVersion (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-lambda/lib/layers.ts:124:29)",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:30:29)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/AssetParameters/2e0938d8207f9095a5914a1cf190836553d3f5604789b4f7e0e8f6f4760756bb/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters2e0938d8207f9095a5914a1cf190836553d3f5604789b4f7e0e8f6f4760756bbS3VersionKeyE81EFF78",
+            "trace": [
+              "new FileAssetParameters (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "ExamenStack.addFileAsset (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+              "new LayerVersion (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-lambda/lib/layers.ts:124:29)",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:30:29)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/AssetParameters/2e0938d8207f9095a5914a1cf190836553d3f5604789b4f7e0e8f6f4760756bb/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters2e0938d8207f9095a5914a1cf190836553d3f5604789b4f7e0e8f6f4760756bbArtifactHash71FA47AA",
+            "trace": [
+              "new FileAssetParameters (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "ExamenStack.addFileAsset (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+              "new LayerVersion (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-lambda/lib/layers.ts:124:29)",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:30:29)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/AssetParameters/403b32b3ae34857678bba7fde5e4bc94c2c606b6ef2c7f5fe4750205011b48be/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters403b32b3ae34857678bba7fde5e4bc94c2c606b6ef2c7f5fe4750205011b48beS3Bucket2C99856C",
+            "trace": [
+              "new FileAssetParameters (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "ExamenStack.addFileAsset (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+              "new Function (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-lambda/lib/function.ts:338:29)",
+              "/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:172:15",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:53:21)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/AssetParameters/403b32b3ae34857678bba7fde5e4bc94c2c606b6ef2c7f5fe4750205011b48be/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters403b32b3ae34857678bba7fde5e4bc94c2c606b6ef2c7f5fe4750205011b48beS3VersionKey555C4A6A",
+            "trace": [
+              "new FileAssetParameters (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "ExamenStack.addFileAsset (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+              "new Function (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-lambda/lib/function.ts:338:29)",
+              "/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:172:15",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:53:21)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/AssetParameters/403b32b3ae34857678bba7fde5e4bc94c2c606b6ef2c7f5fe4750205011b48be/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters403b32b3ae34857678bba7fde5e4bc94c2c606b6ef2c7f5fe4750205011b48beArtifactHashCD3085AD",
+            "trace": [
+              "new FileAssetParameters (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "ExamenStack.addFileAsset (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+              "new Function (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-lambda/lib/function.ts:338:29)",
+              "/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:172:15",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:53:21)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/create-function/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "createfunctionServiceRole2BBD26A6",
+            "trace": [
+              "new Role (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-iam/lib/role.ts:199:18)",
+              "new Function (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-lambda/lib/function.ts:318:31)",
+              "/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:172:15",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:53:21)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/create-function/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "createfunctionServiceRoleDefaultPolicy35595812",
+            "trace": [
+              "new Policy (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-iam/lib/policy.ts:89:22)",
+              "Role.addToPrincipalPolicy (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-iam/lib/role.ts:236:28)",
+              "Function.addToPrincipal (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-iam/lib/grant.ts:92:61)",
+              "Table.combinedGrant (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:522:29)",
+              "Table.grantReadWriteData (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:349:17)",
+              "/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:182:10",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:53:21)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/create-function/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "createfunction729BE90C",
+            "trace": [
+              "new Function (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-lambda/lib/function.ts:388:35)",
+              "/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:172:15",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:53:21)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/get-by-email-function/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "getbyemailfunctionServiceRoleE9FBFFF0",
+            "trace": [
+              "new Role (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-iam/lib/role.ts:199:18)",
+              "new Function (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-lambda/lib/function.ts:318:31)",
+              "/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:172:15",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:54:25)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/get-by-email-function/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "getbyemailfunctionServiceRoleDefaultPolicy0669C8A3",
+            "trace": [
+              "new Policy (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-iam/lib/policy.ts:89:22)",
+              "Role.addToPrincipalPolicy (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-iam/lib/role.ts:236:28)",
+              "Function.addToPrincipal (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-iam/lib/grant.ts:92:61)",
+              "Table.combinedGrant (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:522:29)",
+              "Table.grantReadWriteData (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:349:17)",
+              "/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:182:10",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:54:25)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/get-by-email-function/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "getbyemailfunction0664C563",
+            "trace": [
+              "new Function (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-lambda/lib/function.ts:388:35)",
+              "/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:172:15",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:54:25)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/get-by-document-function/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "getbydocumentfunctionServiceRole16D957C0",
+            "trace": [
+              "new Role (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-iam/lib/role.ts:199:18)",
+              "new Function (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-lambda/lib/function.ts:318:31)",
+              "/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:172:15",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:55:28)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/get-by-document-function/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "getbydocumentfunctionServiceRoleDefaultPolicyADC776ED",
+            "trace": [
+              "new Policy (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-iam/lib/policy.ts:89:22)",
+              "Role.addToPrincipalPolicy (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-iam/lib/role.ts:236:28)",
+              "Function.addToPrincipal (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-iam/lib/grant.ts:92:61)",
+              "Table.combinedGrant (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:522:29)",
+              "Table.grantReadWriteData (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:349:17)",
+              "/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:182:10",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:55:28)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/get-by-document-function/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "getbydocumentfunction798312D4",
+            "trace": [
+              "new Function (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-lambda/lib/function.ts:388:35)",
+              "/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:172:15",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:55:28)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/update-function/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "updatefunctionServiceRole574BA449",
+            "trace": [
+              "new Role (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-iam/lib/role.ts:199:18)",
+              "new Function (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-lambda/lib/function.ts:318:31)",
+              "/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:172:15",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:56:21)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/update-function/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "updatefunctionServiceRoleDefaultPolicy73F9A50B",
+            "trace": [
+              "new Policy (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-iam/lib/policy.ts:89:22)",
+              "Role.addToPrincipalPolicy (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-iam/lib/role.ts:236:28)",
+              "Function.addToPrincipal (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-iam/lib/grant.ts:92:61)",
+              "Table.combinedGrant (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:522:29)",
+              "Table.grantReadWriteData (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:349:17)",
+              "/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:182:10",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:56:21)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/update-function/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "updatefunction240A5A05",
+            "trace": [
+              "new Function (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-lambda/lib/function.ts:388:35)",
+              "/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:172:15",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:56:21)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/delete-function/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "deletefunctionServiceRole8C0BC7EC",
+            "trace": [
+              "new Role (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-iam/lib/role.ts:199:18)",
+              "new Function (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-lambda/lib/function.ts:318:31)",
+              "/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:172:15",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:57:21)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/delete-function/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "deletefunctionServiceRoleDefaultPolicy0F7A22E3",
+            "trace": [
+              "new Policy (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-iam/lib/policy.ts:89:22)",
+              "Role.addToPrincipalPolicy (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-iam/lib/role.ts:236:28)",
+              "Function.addToPrincipal (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-iam/lib/grant.ts:92:61)",
+              "Table.combinedGrant (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:522:29)",
+              "Table.grantReadWriteData (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:349:17)",
+              "/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:182:10",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:57:21)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/delete-function/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "deletefunction554609D0",
+            "trace": [
+              "new Function (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-lambda/lib/function.ts:388:35)",
+              "/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:172:15",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:57:21)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/api/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiC8550315",
+            "trace": [
+              "new RestApi (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:463:22)",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:59:15)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/api/CloudWatchRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiCloudWatchRoleAC81D93E",
+            "trace": [
+              "new Role (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-iam/lib/role.ts:199:18)",
+              "RestApi._configureCloudWatchRole (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:289:18)",
+              "new RestApi (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:481:12)",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:59:15)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/api/Account": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiAccount57E28B43",
+            "trace": [
+              "RestApi._configureCloudWatchRole (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:294:22)",
+              "new RestApi (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:481:12)",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:59:15)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/api/Deployment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiDeployment149F129489e6d7577b7453cb207bbfb87b78a446",
+            "trace": [
+              "new Deployment (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/deployment.ts:34:21)",
+              "RestApi._configureDeployment (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:318:32)",
+              "new RestApi (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:484:10)",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:59:15)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/api/DeploymentStage.prod/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiDeploymentStageprod896C8101",
+            "trace": [
+              "new Stage (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/stage.ts:136:22)",
+              "RestApi._configureDeployment (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:328:30)",
+              "new RestApi (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:484:10)",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:59:15)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/api/Endpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiEndpoint9349E63C",
+            "trace": [
+              "RestApi._configureDeployment (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:333:7)",
+              "new RestApi (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:484:10)",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:59:15)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/api/Default/POST/ApiPermission.mylambdaapi2986B6A0.POST..": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiPOSTApiPermissionmylambdaapi2986B6A0POSTADCA5012",
+            "trace": [
+              "Function.addPermission (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:130:5)",
+              "LambdaIntegration.bind (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:41:18)",
+              "new Method (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:98:36)",
+              "RootResource.addMethod (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:96:8)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/api/Default/POST/ApiPermission.Test.mylambdaapi2986B6A0.POST..": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiPOSTApiPermissionTestmylambdaapi2986B6A0POSTC4A0EFC7",
+            "trace": [
+              "Function.addPermission (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:130:5)",
+              "LambdaIntegration.bind (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:49:20)",
+              "new Method (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:98:36)",
+              "RootResource.addMethod (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:96:8)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/api/Default/POST/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiPOST36368FF5",
+            "trace": [
+              "new Method (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:116:22)",
+              "RootResource.addMethod (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:96:8)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/api/Default/GET/ApiPermission.mylambdaapi2986B6A0.GET..": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiGETApiPermissionmylambdaapi2986B6A0GET92067EA5",
+            "trace": [
+              "Function.addPermission (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:130:5)",
+              "LambdaIntegration.bind (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:41:18)",
+              "new Method (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:98:36)",
+              "RootResource.addMethod (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:111:8)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/api/Default/GET/ApiPermission.Test.mylambdaapi2986B6A0.GET..": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiGETApiPermissionTestmylambdaapi2986B6A0GETA6CC0EBF",
+            "trace": [
+              "Function.addPermission (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:130:5)",
+              "LambdaIntegration.bind (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:49:20)",
+              "new Method (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:98:36)",
+              "RootResource.addMethod (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:111:8)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/api/Default/GET/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiGETECF0BD67",
+            "trace": [
+              "new Method (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:116:22)",
+              "RootResource.addMethod (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:111:8)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/api/Default/{email}/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiemail2164393C",
+            "trace": [
+              "new Resource (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:342:22)",
+              "RootResource.addResource (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:91:12)",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:127:25)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/api/Default/{email}/GET/ApiPermission.mylambdaapi2986B6A0.GET..{email}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiemailGETApiPermissionmylambdaapi2986B6A0GETemail3EA157B0",
+            "trace": [
+              "Function.addPermission (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:130:5)",
+              "LambdaIntegration.bind (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:41:18)",
+              "new Method (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:98:36)",
+              "Resource.addMethod (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:128:12)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/api/Default/{email}/GET/ApiPermission.Test.mylambdaapi2986B6A0.GET..{email}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiemailGETApiPermissionTestmylambdaapi2986B6A0GETemailFA07EEC0",
+            "trace": [
+              "Function.addPermission (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:130:5)",
+              "LambdaIntegration.bind (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:49:20)",
+              "new Method (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:98:36)",
+              "Resource.addMethod (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:128:12)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/api/Default/{email}/GET/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiemailGET0701AABF",
+            "trace": [
+              "new Method (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:116:22)",
+              "Resource.addMethod (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:128:12)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/api/Default/{email}/PUT/ApiPermission.mylambdaapi2986B6A0.PUT..{email}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiemailPUTApiPermissionmylambdaapi2986B6A0PUTemail13CDBEC1",
+            "trace": [
+              "Function.addPermission (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:130:5)",
+              "LambdaIntegration.bind (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:41:18)",
+              "new Method (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:98:36)",
+              "Resource.addMethod (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:139:12)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/api/Default/{email}/PUT/ApiPermission.Test.mylambdaapi2986B6A0.PUT..{email}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiemailPUTApiPermissionTestmylambdaapi2986B6A0PUTemail74C9D8C6",
+            "trace": [
+              "Function.addPermission (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:130:5)",
+              "LambdaIntegration.bind (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:49:20)",
+              "new Method (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:98:36)",
+              "Resource.addMethod (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:139:12)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/api/Default/{email}/PUT/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiemailPUT68E4530E",
+            "trace": [
+              "new Method (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:116:22)",
+              "Resource.addMethod (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:139:12)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/api/Default/{email}/DELETE/ApiPermission.mylambdaapi2986B6A0.DELETE..{email}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiemailDELETEApiPermissionmylambdaapi2986B6A0DELETEemailC29CD98E",
+            "trace": [
+              "Function.addPermission (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:130:5)",
+              "LambdaIntegration.bind (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:41:18)",
+              "new Method (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:98:36)",
+              "Resource.addMethod (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:153:12)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/api/Default/{email}/DELETE/ApiPermission.Test.mylambdaapi2986B6A0.DELETE..{email}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiemailDELETEApiPermissionTestmylambdaapi2986B6A0DELETEemail99229222",
+            "trace": [
+              "Function.addPermission (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:130:5)",
+              "LambdaIntegration.bind (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:49:20)",
+              "new Method (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:98:36)",
+              "Resource.addMethod (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:153:12)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/api/Default/{email}/DELETE/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiemailDELETE89574E19",
+            "trace": [
+              "new Method (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:116:22)",
+              "Resource.addMethod (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:153:12)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/api/bad-request-gwResponse/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apibadrequestgwResponse4D19EDC0",
+            "trace": [
+              "new GatewayResponse (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/gateway-response.ts:45:22)",
+              "RestApi.addGatewayResponse (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:204:12)",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:62:7)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/api/customer-model/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apicustomermodelFB16A7B8",
+            "trace": [
+              "new Model (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/model.ts:73:22)",
+              "RestApi.addModel (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:500:12)",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:70:30)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/api/customer-update-model/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apicustomerupdatemodel92CB5B8D",
+            "trace": [
+              "new Model (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/model.ts:73:22)",
+              "RestApi.addModel (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:500:12)",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:75:37)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/api/full-validator/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apifullvalidator14E87319",
+            "trace": [
+              "new RequestValidator (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/requestvalidator.ts:51:22)",
+              "RestApi.addRequestValidator (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:508:12)",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:81:30)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/api/params-validator/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiparamsvalidator3CA5B9D6",
+            "trace": [
+              "new RequestValidator (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/requestvalidator.ts:51:22)",
+              "RestApi.addRequestValidator (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:508:12)",
+              "new ExamenStack (/Users/marioandre/Mario/typescript/examen/lib/examen-stack.ts:87:32)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/bin/examen.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Module.m._compile (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1068:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)",
+              "Module.load (internal/modules/cjs/loader.js:933:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:774:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/my-lambda/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/app.ts:64:45)",
+              "Object.onceWrapper (events.js:483:26)",
+              "process.emit (events.js:376:20)",
+              "process.emit (domain.js:470:12)",
+              "process.emit (/Users/marioandre/Mario/typescript/examen/node_modules/source-map-support/source-map-support.js:516:21)"
+            ]
+          }
+        ],
+        "/my-lambda/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:31:27)",
+              "/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/marioandre/Mario/typescript/examen/node_modules/@aws-cdk/core/lib/app.ts:64:45)",
+              "Object.onceWrapper (events.js:483:26)",
+              "process.emit (events.js:376:20)",
+              "process.emit (domain.js:470:12)",
+              "process.emit (/Users/marioandre/Mario/typescript/examen/node_modules/source-map-support/source-map-support.js:516:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "my-lambda"
+    }
+  }
+}

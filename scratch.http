@@ -1,0 +1,30 @@
+
+##
+POST :base-url/
+Content-Type: application/json
+
+{
+    "email": "mario@yopmail.com",
+    "document_type": "DNI",
+    "document_number": "46464646",
+    "name": "mario",
+    "last_name": "camones"
+}
+
+##
+GET :base-url/mario@yopmail.com
+
+##
+GET :base-url?document_number=46464646&document_type=DNI
+
+##
+PUT :base-url/mario@yopmail.com
+Content-Type: application/json
+
+{
+    "name": "andre",
+    "last_name": "patricio"
+}
+
+##
+DELETE :base-url/mario@yopmail.com
